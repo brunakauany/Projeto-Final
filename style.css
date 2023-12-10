@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Ledger&family=Roboto:ital,wght@0,100;0,300;0,500;1,500&display=swap');
+
+*{margin: 0; padding: 0;}
+
+/*INICIO DO NAV*/
+
+nav{
+
+    width: 100%;
+    height: 100px;
+    background-color: #41434F;
+    display: flex;
+    justify-content: center;
+    
+}
+
+menu{
+    height: 100px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.menu{
+    margin-right: 40px;
+    font: 2rem 'Itim', cursive;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu:hover{
+    color: #e5c490;
+}
+
+#caixa-icon{
+   display: flex;
+   justify-content: space-between;
+}
+
+#icon{
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+/*FIM DO NAV*/
+
+/*INICIO DO BANNER*/
+
+.banner{
+    width: 100%;
+    height: 442px;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+}
+
+
+#poster-img{
+    width: 362px;
+    padding-right: 70px;
+    padding-top: 40px;
+    border-radius: 100%;
+}
+
+#video-trailer{
+    background-color: #000000;
+    width: 800px;
+    height: 442px;
+}
+
+#historia{
+    width: 100%;
+    height: 55vh;
+    background-color: #2d2828;
+
+}
+ #titulo-historia{
+    font: 1.4rem 'Ledger', serif;
+    color: #ffffff;
+    padding: 15px;
+    padding-top: 50px;
+    text-align: center;
+ }
+
+.texto{
+    font: 1rem 'Ledger', serif;
+    color: #ffffff;
+    text-align: justify;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin: 20px;
+    text-indent:3em;
+}
+
+
+/*FIM DO BANNER*/
+
+
+/*INICIO DO MAIN*/
+
+main{
+    width: 100%;
+    display: flex;
+    background-color: #F2D8A9;
+}
+
+#caixa{
+  
+    background-color: #F2D8A9;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+#episodios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+#texto-ep{
+    font: 2.3rem 'Itim', cursive;
+    width: 20%;
+    height: 50px;
+    display: flex; 
+    margin: 20px;
+}
+
+#bloco-episodios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+  
+}
+
+
+#login{
+    width: 30%;
+    height: 140vh;
+    background-color: #8C8273; 
+    position: sticky;
+    top: 0;
+    
+} 
+
+
+
+form{
+    background-color: #ffffff;
+    margin: 10px auto;
+    width: 260px;
+    height: 450px;
+    padding: 20px;
+    border-radius: 10px;  
+}
+
+#login h1{
+    font: 1.7rem 'Itim', cursive;
+    text-align: center;
+    padding: 50px 40px 40px 40px;
+
+}
+
+.cadastro {
+    color:#000000;
+    text-decoration: none;
+}
+
+input{
+    width: 100%;
+    font: 1.2rem 'Itim', cursive;
+    color: #000000;
+    font-weight: 500;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 0 20px 0;
+    background-color: #F2D8A9;
+}
+
+input[type="submit"]{
+    width: 100px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+box-shadow: 3px 3px 1px #d4be94;
+}
+
+form p{
+    text-align: center;
+    font: 1rem 'Itim', cursive;
+    padding: 5px;
+}
+
+label{
+    font: 1.2rem 'Itim', cursive;
+    color: #000000;
+    font-weight: 500;
+}
+
+h2{
+    font: 2rem 'Itim', cursive;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#canais{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+.logos{
+    width: 100px;
+    border-radius: 10px;
+}
+
+.logos:hover{
+    box-shadow: 5px 5px 2px #6c6459;
+}
+
+
+
+/*Formatação dos cards*/
+
+.cards-episodios{
+    position: relative;
+}
+
+.hover-text {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hover-text{
+    font: 1.2rem 'Ledger', serif;
+    color: #000000;
+    text-align: justify;
+    padding:40px;
+    
+}
+
+.cards-episodios:hover .texto-episodios {
+    display: none;
+}
+
+  .cards-episodios:hover .imgs-episodios {
+    display: none;
+}
+ 
+.cards-episodios:hover .hover-text {
+    display: block;
+}
+
+/* fim da formatação dos cards*/
+
+.cards-episodios{
+    width: 380px;
+    height: 325px;
+    background-color: #ffffff;
+    margin: 40px;
+    border-radius: 10px 10px 10px 10px;   
+}
+
+.imgs-episodios{
+    width: 380px;
+    height: 225px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.texto-episodios{
+    font: 1.2rem 'Ledger', serif;
+    text-align: center;
+    margin-top: 10px;
+
+}
+
+.cards-episodios:hover{
+    box-shadow: 10px 10px 5px #d4be94;
+    
+}
+
+
+/*  INICIO FOOTER*/
+footer{
+    background-color: #41434F;
+    height: 100px;
+}
+
+footer p{
+    text-align: center;
+    font: 1.8rem 'Itim', cursive;
+    color: #ffffff;
+    padding-top: 25px;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 900px)  {
+    nav{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    #icon{
+       width: 230px;
+       height: 100px;
+       padding-right: 0px;
+
+    }
+
+
+    .menu{
+        margin-right: 0px;
+        padding: 10px;
+        font: 1.3rem 'Itim', cursive;
+        color: #ffffff;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    #caixa-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 250px;
+        padding-top: 10px;
+        
+     }
+
+     .banner{
+        width: 100%;
+        height: 120vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        background-color: #000000;
+        box-sizing: border-box;
+    }
+    
+    
+    #poster-img{
+        width: 100%;
+        padding-right: 10px;
+        padding-top: 40px;
+        border-radius: 100%;
+    }
+    
+    #video-trailer{
+        background-color: #000000;
+        width: 100%;
+        height: 300px;
+        margin-top: -40px;
+        
+    }
+
+    #historia{
+
+        height: 100vh;
+        box-sizing: border-box;
+    }
+
+     #titulo-historia{
+        font: 1.3rem 'Ledger', serif;
+        color: #ffffff;
+        padding: 10px;
+        padding-top: 30px;
+        text-align: center;
+     }
+    
+    .texto{
+        font: 1rem 'Ledger', serif;
+        color: #ffffff;
+        text-align: justify;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin: 20px;
+        text-indent:3em;
+    }
+
+    /*INICIO DO MAIN*/
+
+main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F2D8A9;
+    box-sizing: border-box;
+}
+
+#caixa{
+  
+    background-color: #F2D8A9;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#episodios{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+#texto-ep{
+    font: 1.5rem 'Itim', cursive;
+    width: 100%;
+    height: 5px;
+}
+
+#bloco-episodios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  
+}
+.cards-episodios{
+    width: 280px;
+    height: 255px;
+    background-color: #ffffff;
+    margin: 40px;
+    border-radius: 10px 10px 10px 10px;   
+}
+
+.imgs-episodios{
+    width: 280px;
+    height: 155px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.texto-episodios{
+    font: 1rem 'Ledger', serif;
+    text-align: center;
+    padding: 5px 5px 0px 5px;
+
+}
+
+.hover-text{
+    font: 0.8rem 'Ledger', serif;
+    color: #000000;
+    text-align: justify;
+    padding-top: 30px;
+    
+}
+
+#login{
+    width: 100%;
+    height: 110vh;
+    background-color: #8C8273; 
+    box-sizing: border-box;
+    
+} 
+
+form{
+    background-color: #ffffff;
+    margin: 10px auto;
+    width: 260px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 10px;  
+}
+
+#login h1{
+    font: 1.5rem 'Itim', cursive;
+    text-align: center;
+    padding: 30px 30px 10px 30px;
+
+}
+
+input{
+    width: 100%;
+    font: 1rem 'Itim', cursive;
+    color: #000000;
+    font-weight: 500;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 3px;
+    margin: 5px 0 20px 0;
+    background-color: #F2D8A9;
+    
+}
+
+
+form p{
+    
+    font: 1rem 'Itim', cursive;
+    padding: 10px;
+}
+
+label{
+    font: 1rem 'Itim', cursive;
+}
+
+h2{
+    font: 1.7rem 'Itim', cursive;
+   
+   
+}
+
+.logos{
+    width: 70px;
+    border-radius: 10px;
+}
+
+footer p{
+    font: 1.2rem 'Itim', cursive;
+    padding-top: 35px;
+}
+
+}
+

@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Ledger&family=Roboto:ital,wght@0,100;0,300;0,500;1,500&display=swap');
+
+*{margin: 0; padding: 0;}
+
+/*INICIO DO NAV*/
+
+nav{
+
+    width: 100%;
+    height: 100px;
+    background-color: #41434F;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+menu{
+    height: 100px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+.menu{
+    margin-right: 40px;
+    font: 2rem 'Itim', cursive;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.menu:hover{
+    color: #e5c490;
+}
+
+#caixa-icon{
+   display: flex;
+   justify-content: space-between;
+}
+
+#icon{
+    width: auto;
+    padding: 5px;
+    box-sizing: border-box;
+    padding-right: 50px;
+}
+
+/*FIM DO NAV*/
+
+
+/*PAGINA FAN ARTS*/
+
+main{
+    width: 100%;
+    background-color: #F2D8A9;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#texto{
+    background-color: #F2D8A9;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 20px 10px 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+   
+}
+
+#cabecalho h1{
+    font: 2.3rem 'Itim', cursive;
+    padding: 20px;
+    text-align: center;
+}
+
+#texto p{
+    
+    font: 1rem 'Ledger', serif;
+    text-align: center; 
+    color: #000000;
+}
+
+/*Carrossel*/
+
+.carousel-inner{
+    width: 1000px;
+    height: auto;
+    
+}
+
+/* Carrossel*/
+
+
+#artistas{
+    background-color: #2d2828;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-top: 40px;
+    
+}
+
+.linhas {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 15px 0px 15px 0px;
+}
+
+
+/*FIM PAGINA FAN ARTS*/
+
+/*  INICIO FOOTER*/
+footer{
+    width: 100%;
+    background-color: #41434F;
+    height: 100px;
+}
+
+footer p{
+    text-align: center;
+    font: 1.8rem 'Itim', cursive;
+    color: #ffffff;
+    padding-top: 25px;
+}
+
+/*Mobile*/
+
+@media screen and (max-width: 900px)  {
+    nav{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+   
+    }
+
+    #icon{
+       width: 230px;
+       height: 100px;
+       padding-right: 0px;
+
+    }
+
+    .menu{
+        margin-right: 0px;
+        padding: 10px;
+        font: 1.3rem 'Itim', cursive;
+        color: #ffffff;
+        text-decoration: none;
+        align-items: center;
+    }
+
+    #caixa-icon{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 250px;
+        padding-top: 10px;
+     }
+
+     #texto{
+        width: 90%;
+        padding: 20px 20px 10px 20px;
+    }
+    
+    #cabecalho{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #cabecalho h1{
+        font: 1.5rem 'Itim', cursive;
+    }
+    
+    #texto p{
+        font: 0.9rem 'Ledger', serif;
+    }
+
+    .carousel-inner{
+        width: 400px;
+        height: auto;
+    }
+
+    iframe{
+        width: 300px;
+        padding-top: 30px;
+    }
+
+    .linhas{
+        margin-top: -30px;
+    }
+
+    /*FIM PAGINA FAN ARTS*/
+
+    footer p{
+        font: 1.2rem 'Itim', cursive;
+        padding-top: 35px;
+    }
+
+    }
